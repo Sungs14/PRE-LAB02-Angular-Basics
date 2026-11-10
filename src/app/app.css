@@ -106,6 +106,30 @@ section h2 {
   line-height: 1.5;
 }
 
+/* Technical proficiencies */
+.proficiencies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
+}
+
+.prof {
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.prof h3 {
+  margin: 0 0 6px;
+  color: var(--maroon);
+  font-size: 1rem;
+}
+
+.prof ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
 /* Interaction */
 .message {
   margin: 0 0 14px;

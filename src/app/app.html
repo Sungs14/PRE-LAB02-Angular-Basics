@@ -27,6 +27,22 @@
     </ul>
   </section>
 
+  <section>
+    <h2>Technical Proficiencies</h2>
+    <div class="proficiencies">
+      @for (group of proficiencies; track group.category) {
+        <div class="prof">
+          <h3>{{ group.category }}</h3>
+          <ul>
+            @for (item of group.items; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </section>
+
   <section class="interaction">
     <h2>Angular Interaction</h2>
     <p class="message" aria-live="polite">{{ message }}</p>
