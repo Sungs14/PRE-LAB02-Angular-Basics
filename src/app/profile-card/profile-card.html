@@ -1,0 +1,9 @@
+<section class="profile-card">
+  <h2>{{ cardTitle }}</h2>
+  <p class="description">{{ description }}</p>
+  <ul class="tags" aria-label="Hobbies">
+    @for (hobby of hobbies; track hobby) {
+      <li class="tag">{{ hobby }}</li>
+    }
+  </ul>
+</section>

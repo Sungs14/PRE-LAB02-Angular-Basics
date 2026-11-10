@@ -1,0 +1,163 @@
+:host {
+  --maroon: #7a1f3d;
+  --maroon-dark: #5f172f;
+  --tint: #f2e8ec;
+  --ink: #252525;
+  --muted: #5c5c5c;
+  --line: #e4dde0;
+  display: block;
+}
+
+.resume {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 32px 40px;
+  color: var(--ink);
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  line-height: 1.7;
+}
+
+/* Header */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 32px;
+  margin: 0 -32px 32px;
+  border-radius: 14px;
+  background: var(--maroon);
+  color: #ffffff;
+}
+
+.avatar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--maroon);
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.intro h1 {
+  margin: 0 0 6px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 18px;
+  margin: 0;
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}
+
+.contact a {
+  color: #ffffff;
+  text-underline-offset: 3px;
+}
+
+.contact a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Sections */
+section {
+  margin: 30px 0;
+}
+
+section h2 {
+  margin: 0 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--tint);
+  color: var(--maroon);
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.lead {
+  margin: 0;
+  max-width: 65ch;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills li {
+  padding: 6px 16px;
+  border: 1.5px solid var(--maroon);
+  border-radius: 999px;
+  color: var(--maroon);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Interaction */
+.message {
+  margin: 0 0 14px;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background: var(--maroon);
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: var(--maroon-dark);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:focus-visible {
+  outline: 3px solid var(--maroon);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .resume {
+    margin: 12px 0;
+    padding: 0 18px 24px;
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 0 -18px 24px;
+    padding: 22px 18px;
+    border-radius: 0;
+  }
+
+  .intro h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button {
+    transition: none;
+  }
+}
